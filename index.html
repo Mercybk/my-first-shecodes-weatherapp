@@ -14,25 +14,35 @@
   <body>
     <div class="weather-app">
       <head>
-        <form>
-          <input type="search" placeholder="Enter city..." required />
-          <input type="submit" value="search" />
+        <form class="wearther-form">
+          <input
+            class="search-form"
+            type="search"
+            placeholder="Enter city..."
+            required
+          />
+          <input class="sumbit-form" type="submit" value="search" />
         </form>
       </head>
-      <main>
+      <main class="weather-app-data">
         <div>
-          <h1>paris</h1>
-          <p>
+          <h1 class="weather-app-city">Paris</h1>
+          <p class="weather-app-details">
             Friday 6:43, overcast clouds
             <br />
-            Humidity: 81%, Wind: 5.14km/h
+            Humidity:<strong>81%</strong>, Wind: <strong> 5.14km/h </strong>
           </p>
         </div>
-        <div>🌦️18°C</div>
+        <div class="weather-app-temperature-container">
+          <div class="weather-app-temperature">
+            <strong class="weather-app-icon"> 🌦️</strong> 18
+          </div>
+          <div class="weatehr-app-unit">°C</div>
+        </div>
       </main>
       <footer>
         This project was coded by
-        <a href="https://github.com/Mercybk" target="_blank">mihret bekure</a>
+        <a href="https://github.com/Mercybk" target="_blank">Mihret bekure</a>
         is
         <a
           href="https://github.com/Mercybk/my-first-shecodes-weatherapp"
@@ -48,5 +58,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
